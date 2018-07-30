@@ -1,0 +1,16 @@
+categories:
+    - {Dimable device : 1, subcategoies: [{switch: 1}, {module: 2}], properties: [{on: DON}, {off: DOF}, {bright: BRT}, {dim: DIM}]}
+    - {Relay device: 2}
+    - {Network Bridge: 3}
+    - {Irrigation Control: 4}
+    - {Climate Control: 5}
+    - {Pool Control: 6}
+    - {Sensors: 7}
+    - {Audio Video Control: 8}
+    - {Energy Monitor: 9}
+    - {Camera: 10}
+    - {Date / Time: 11}
+    - {Weather: 12}
+    - {Window/Shade Control: 14}
+    - {Access Control: 15}
+    - {Security/Health: 16}
