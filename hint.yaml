@@ -1,100 +1,298 @@
-categories:
-    - {Dimable device : 1, subcategoies: [{switch: 1}, {module: 2}], properties: [{on: DON}, {off: DOF}, {bright: BRT}, {dim: DIM}]}
-    - {Relay device: 2}
-    - {Network Bridge: 3}
-    - {Irrigation Control: 4}
-    - {Climate Control: 5}
-    - {Pool Control: 6}
-    - {Sensors: 7}
-    - {Audio Video Control: 8}
-    - {Energy Monitor: 9}
-    - {Camera: 10}
-    - {Date / Time: 11}
-    - {Weather: 12}
-    - {Window/Shade Control: 14}
-    - {Access Control: 15}
-    - {Security/Health: 16}
-    - {Unknown" />
-      <isyNodeType id="102" name="Alarm" />
-      <isyNodeType id="103" name="AV Control Point" />
-      <isyNodeType id="104" name="Binary Sensor" />
-      <isyNodeType id="105" name="Class A Motor Control" />
-      <isyNodeType id="106" name="Class B Motor Control" />
-      <isyNodeType id="107" name="Class C Motor Control" />
-      <isyNodeType id="108" name="Controller" />
-      <isyNodeType id="109" name="Dimmer Switch" />
-      <isyNodeType id="110" name="Display" />
-      <isyNodeType id="111" name="Door Lock" />
-      <isyNodeType id="112" name="Doorbell" />
-      <isyNodeType id="113" name="Entry Control" />
-      <isyNodeType id="114" name="Gateway" />
-      <isyNodeType id="115" name="Installer Tool" />
-      <isyNodeType id="116" name="Motor Multiposition" />
-      <isyNodeType id="117" name="Climate Sensor" />
-      <isyNodeType id="118" name="Multilevel Sensor" />
-      <isyNodeType id="119" name="Multilevel Switch" />
-      <isyNodeType id="120" name="On/Off Power Strip" />
-      <isyNodeType id="121" name="On/Off Power Switch" />
-      <isyNodeType id="122" name="On/Off Scene Switch" />
-      <isyNodeType id="123" name="Open/Close Valve" />
-      <isyNodeType id="124" name="PC Controller" />
-      <isyNodeType id="125" name="Remote" />
-      <isyNodeType id="126" name="Remote Control" />
-      <isyNodeType id="127" name="AV Remote Control" />
-      <isyNodeType id="128" name="Simple Remote Control" />
-      <isyNodeType id="129" name="Repeater" />
-      <isyNodeType id="130" name="Residential HRV" />
-      <isyNodeType id="131" name="Satellite Receiver" />
-      <isyNodeType id="132" name="Satellite Receiver" />
-      <isyNodeType id="133" name="Scene Controller" />
-      <isyNodeType id="134" name="Scene Switch" />
-      <isyNodeType id="135" name="Security Panel" />
-      <isyNodeType id="136" name="Set-Top Box" />
-      <isyNodeType id="137" name="Siren" />
-      <isyNodeType id="138" name="Smoke Alarm" />
-      <isyNodeType id="139" name="Subsystem Controller" />
-      <isyNodeType id="140" name="Thermostat" />
-      <isyNodeType id="141" name="Toggle" />
-      <isyNodeType id="142" name="Television" />
-      <isyNodeType id="143" name="Energy Meter" />
-      <isyNodeType id="144" name="Pulse Meter" />
-      <isyNodeType id="145" name="Water Meter" />
-      <isyNodeType id="146" name="Gas Meter" />
-      <isyNodeType id="147" name="Binary Switch" />
-      <isyNodeType id="148" name="Binary Alarm" />
-      <isyNodeType id="149" name="Aux Alarm" />
-      <isyNodeType id="150" name="CO2 Alarm" />
-      <isyNodeType id="151" name="CO Alarm" />
-      <isyNodeType id="152" name="Freeze Alarm" />
-      <isyNodeType id="153" name="Glass Break Alarm" />
-      <isyNodeType id="154" name="Heat Alarm" />
-      <isyNodeType id="155" name="Motion Sensor" />
-      <isyNodeType id="156" name="Smoke Alarm" />
-      <isyNodeType id="157" name="Tamper Alarm" />
-      <isyNodeType id="158" name="Tilt Alarm" />
-      <isyNodeType id="159" name="Water Alarm" />
-      <isyNodeType id="160" name="Door/Window Alarm" />
-      <isyNodeType id="161" name="Test Alarm" />
-      <isyNodeType id="162" name="Low Battery Alarm" />
-      <isyNodeType id="163" name="CO End Of Life Alarm" />
-      <isyNodeType id="164" name="Malfunction Alarm" />
-      <isyNodeType id="165" name="Heartbeat" />
-      <isyNodeType id="166" name="Overheat Alarm" />
-      <isyNodeType id="167" name="Rapid Temp Rise Alarm" />
-      <isyNodeType id="168" name="Underheat Alarm" />
-      <isyNodeType id="169" name="Leak Detected Alarm" />
-      <isyNodeType id="170" name="Level Drop Alarm" />
-      <isyNodeType id="171" name="Replace Filter Alarm" />
-      <isyNodeType id="172" name="Intrusion Alarm" />
-      <isyNodeType id="173" name="Tamper Code Alarm" />
-      <isyNodeType id="174" name="Hardware Failure Alarm" />
-      <isyNodeType id="175" name="Software Failure Alarm" />
-      <isyNodeType id="176" name="Contact Police Alarm" />
-      <isyNodeType id="177" name="Contact Fire Alarm" />
-      <isyNodeType id="178" name="Contact Medical Alarm" />
-      <isyNodeType id="179" name="Wakeup Alarm" />
-      <isyNodeType id="180" name="Timer" />
-      <isyNodeType id="181" name="Power Management" />
-      <isyNodeType id="182" name="Appliance" />
-      <isyNodeType id="183" name="Home Health" />
-      <isyNodeType id="184" name="Barrier" />
+0x01:
+    name: home
+    description: Residential domain
+    categories:
+        0x00:
+           name: DeviceID
+           description: Unique device identification
+           0x0000:
+               name: Unknown
+               description: "don't use"
+        0x01:
+            name: Alarm
+            description: Alarm related device nodes
+            subcategories:
+                0x01:
+                    name: Security Panel
+                    description: 
+                0x02:
+                    name: Zone
+                    description: security zone related nodes
+                0x03:
+                    name: Partition
+                    description: security partition related nodes
+                0x04:
+                    name: Siren
+                    description: 
+            node_specific:
+                0x00:
+                    name: n/a
+                    description: no node specific identification
+        0x02:
+            name: Controller
+            description: nodes that represent a controllable entitie
+            subcategories:
+                0x01:
+                    name: Class A Motor Control
+                    description:
+                0x02:
+                    name: Class B Motor Control
+                    description:
+                0x03:
+                    name: Class C Motor Control
+                    description:
+                0x04:
+                    name: Motor Multiposition
+                    description: stepper motor control?
+                0x05:
+                    name: Entry Control
+                    description: door or window mechinism
+                0x06:
+                    name: PC Controller
+                    description:
+                0x07:
+                    name: Scene Controller
+                    description: Controls a group of devices
+                0x08:
+                    name: Subsystem Controller
+                    description:
+                0x09:
+                    name: Dimmer Switch
+                    description: Sends a ramped up or down level
+                0x0a:
+                    name: Multilevel Switch
+                    description: Sends distinct levels
+                0x0b:
+                    name: Scene Switch
+                    description: How is this different from scene controller?
+                0x0c:
+                    name: Toggle
+                    description: Toggles between two values
+        0x03:
+            name: Sensor
+            description: Status only nodes
+            subcategories:
+                0x01:
+                    name: Binary Sensor
+                    description:
+                0x02:
+                    name: Multilevel Sensor
+                    description:
+                0x03:
+                    name: Climate Sensor
+                    description:
+                0x04:
+                    name: Motion Sensor
+                    description:
+                0x05:
+                    name: Energy Meter
+                    description:
+                0x06:
+                    name: Pulse Meter
+                    description:
+                0x07:
+                    name: Water Meter
+                    description:
+                0x08:
+                    name: Gas Meter
+                    description:
+                0x09:
+                    name: Smoke detector
+                    description:
+                0x0a:
+                    name: Tamper Sensor
+                    description:
+                0x0b:
+                    name: Tilt Sensor
+                    description:
+                0x0c:
+                    name: Water Sensor
+                    description:
+                0x0d:
+                    name: Door/Window Sensor
+                    description:
+                0x0e:
+                    name: Low Battery Sensor
+                    description:
+                0x0f:
+                    name: CO End Of Life Sensor
+                    description:
+                0x10:
+                    name: Overheat Sensor
+                    description:
+                0x11:
+                    name: Rapid Temp Rise Sensor
+                    description:
+                0x12:
+                    name: Underheat Sensor
+                    description:
+                0x13:
+                    name: Leak Detected Sensor
+                    description:
+                0x14:
+                    name: Level Drop Sensor
+                    description:
+                0x15:
+                    name: Filter Clogged Sensor
+                    description:
+                0x16:
+                    name: Intrusion Detect Sensor
+                    description:
+                0x17:
+                    name: CO2 Sensor
+                    description:
+                0x18:
+                    name: CO Sensor
+                    description:
+                0x19:
+                    name: Freeze Sensor
+                    description:
+                0x1a:
+                    name: Glass Break Sensor
+                    description:
+                0x1b:
+                    name: Heat Sensor
+                    description:
+        0x04:
+            name: Relay
+            description: Nodes that represent relays or relay like devices
+            subcategories:
+                0x01:
+                    name: On/Off Power Strip
+                    description:
+                0x02:
+                    name: On/Off Power Switch
+                    description:
+                0x03:
+                    name: On/Off Scene Switch
+                    description:
+                0x04: 
+                    name: Binary Switch
+                    description:
+                0x05:
+                    name: Open/Close Valve
+                    description:
+        0x05:
+            name: Remote
+            description: Nodes that represent multi-button control
+            subcategories:
+                0x01:
+                    name: AV Remote Control
+                    description:
+                0x02:
+                    name: Simple Remote Control
+                    description:
+        0x06:
+            name: Audio Visual
+            description: Nodes that represent audio or video equipment
+            subcategories:
+                0x01:
+                    name: AV Control Point
+                    description:
+                0x02:
+                    name: Satellite Receiver
+                    description:
+                0x03:
+                    name: Television
+                    description:
+                0x04:
+                    name: Set-Top box
+                    description:
+        0x07:
+            name: Door Lock
+            description: Nodes represent door locks
+            subcategories:
+                0x01:
+                    name: 
+                    description:
+        0x08:
+            name: Doorbell
+            description: Nodes representing a door bell or chime
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x09:
+            name: Camera
+            description: Nodes representing devices that transmit images
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x0a:
+            name: Date / Time
+            description: Nodes that deal with calendars and clocks
+            subcategories:
+                0x01:
+                    name: Timer
+                    description: time interval
+        0x0b: 
+            name: Weather
+            description:
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x0c:
+            name: HVAC
+            description:
+            subcategories:
+                0x01:
+                    name: Thermostat
+                    description:
+                0x01:
+                    name: Residential HRV
+                    description:
+        0x0d:
+            name: Display
+            description:
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x0e:
+            name: Gateway
+            description:
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x0f:
+            name: Power Management
+            description:
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x10:
+            name: Appliance
+            description:
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x11:
+            name: Home Health
+            description:
+            subcategories:
+                0x01:
+                    name:
+                    description:
+        0x12:
+            name: Barrier
+            description:
+            subcategories:
+                0x01:
+                    name:
+                    description:
+
+0x02:
+    name: outdoor
+    description: Not in an structure
+0x03:
+    name: industrial
+    description: 
+0x04:
+    name: commerical
+    description: 
+
