@@ -230,9 +230,56 @@
             name: Weather
             description:
             subcategories:
+                0x00:
+                    name: Weather Station
+                    description: Station specific information
                 0x01:
-                    name:
-                    description:
+                    name: Temperature
+                    description: Temperature device
+                    ST: main temperature
+                    GV0: feels like (apparent temperature)
+                    GV1: dewpoint
+                    GV2: heat index
+                    GV3: windchill
+                0x02:
+                    name: Humidity
+                    descripton: Humidity
+                    ST: main humidity
+                0x03:
+                    name: Barometric Pressure
+                    description: Barometric pressure
+                    ST: Absolute (station) pressure
+                    GV0: Relative (sealevel) pressure
+                    GV1: Pressure trend
+                0x04:
+                    name: Wind
+                    Description: Wind related information
+                    ST: Wind speed (average)
+                    GV0: Wind direction
+                    GV1: Wind gust speed
+                    GV2: Wind gust direction
+                    GV3: Wind lull speed
+                0x05:
+                    name: Precipitation
+                    description: rain fall values
+                    ST: Current rain rate
+                    GV0: Hourly rain accumulation
+                    GV1: Daily rain accumulation
+                    GV2: Weekly rain accumulation
+                    GV3: Monthly rain accumulation
+                    GV4: Yearly rain accumulation
+                    GV5: Yesterday rain accumulation
+                0x06:
+                    name: Illumination / light
+                    description: illumination and solar values
+                    ST: UV index
+                    GV0: Solar radiation
+                    GV1: illumination (Lux)
+                0x07:
+                    name: Lightning
+                    description: Lightning detection
+                    ST: Number of lightning strikes
+                    GV0: Distance to strikes (avg)
         0x0c:
             name: HVAC
             description:
