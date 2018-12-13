@@ -287,6 +287,15 @@
                 0x01:
                     name: Thermostat
                     description:
+                    ST: Current Temperature
+                    CLISPH: Set Point Heat
+                    CLIMD: Mode
+                    CLIHUM: Humidity
+                    CLIHCS: 
+                    CLIFRS: Fan State
+                    CLISPC: Set Point Cool
+                    models:
+                        0x01: Ecobee Thermostats
                 0x01:
                     name: Residential HRV
                     description:
