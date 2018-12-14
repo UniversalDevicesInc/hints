@@ -288,14 +288,16 @@
                     name: Thermostat
                     description:
                     ST: Current Temperature
+                    CLISPC: Set Point Cool
                     CLISPH: Set Point Heat
-                    CLIMD: Mode
+                    CLIMD: Current Mode
                     CLIHUM: Humidity
                     CLIHCS: 
                     CLIFRS: Fan State
-                    CLISPC: Set Point Cool
+                    CLISMD: Set Mode
                     models:
                         0x01: Ecobee Thermostats
+                        # CLISMD is; Running, Hold Next, Hold Indefinite
                 0x01:
                     name: Residential HRV
                     description:
