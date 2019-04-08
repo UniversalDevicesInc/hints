@@ -343,6 +343,13 @@
                 0x01:
                     name:
                     description:
+        0x13:
+            name: Automotive
+            description: Nodes with car sensors and controls
+            subcategories:
+                0x01:
+                    name: Tesla
+                    description: Tesla Vehicles
 
 0x02:
     name: outdoor
