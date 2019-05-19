@@ -210,8 +210,11 @@
             description: Nodes representing a door bell or chime
             subcategories:
                 0x01:
-                    name:
-                    description:
+                    name: door bell
+                    description: Nodes representing a door bell
+                0x02:
+                    name: chime
+                    description: Nodes representing a chime
         0x09:
             name: Camera
             description: Nodes representing devices that transmit images
