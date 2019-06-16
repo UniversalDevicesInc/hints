@@ -68,6 +68,9 @@
                 0x0c:
                     name: Toggle
                     description: Toggles between two values
+                0x10:
+                    name: Non-dimming lighting
+                    description: Non-Dimming lighting such as Floodlights
         0x03:
             name: Sensor
             description: Status only nodes
