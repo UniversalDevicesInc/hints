@@ -312,7 +312,7 @@
                     models:
                         0x01: Ecobee Thermostats
                         # CLISMD is; Running, Hold Next, Hold Indefinite
-                0x01:
+                0x02:
                     name: Residential HRV
                     description:
         0x0d:
