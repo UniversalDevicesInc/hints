@@ -90,6 +90,16 @@
                 0x05:
                     name: Energy Meter
                     description:
+                    models:
+                        0x01:
+                            name: Vue
+                            description: Vue node
+                            properties:
+                                ST: Connected
+                                CPW: Reading (kW)
+                                GV1: Hourly KWh
+                                GV2: Daily Kwh
+                                GV3: Monthly Kwh
                 0x06:
                     name: Pulse Meter
                     description:
